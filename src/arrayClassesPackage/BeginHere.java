@@ -10,6 +10,9 @@ public class BeginHere {
 		myStudentArray.buildArray();
 		myStudentArray.showArray();
 		
+		PatientArray myVetArray = new PatientArray();
+		myVetArray.buildArray();
+		
 		/* Graded Assignment
 		 * 
 		 * 1. (learn arrays - for large data ALWAYS use a database, JDBC Java Data Base Connectivity to, for example MySQL)
