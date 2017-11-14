@@ -12,6 +12,7 @@ public class BeginHere {
 		
 		PatientArray myVetArray = new PatientArray();
 		myVetArray.buildArray();
+		myVetArray.showArray();
 		
 		/* Graded Assignment
 		 * 
