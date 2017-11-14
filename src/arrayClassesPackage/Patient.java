@@ -1,30 +1,52 @@
 package arrayClassesPackage;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class Patient {
-	//private String breed;
-	//private String gender;
-	//private int age;
-	//private String symptoms;
+	Scanner answer = new Scanner(System.in);
+	private String breed;
+	private String gender;
+	private String age;
+	private String symptoms;
 
 	public String getBreed() {
-		String breed = JOptionPane.showInputDialog("What is the breed of your pet?");
 		return breed;
 	}
 
+	public void setBreed(String breed) {
+		System.out.println("What is the breed of your pet?");
+		breed = answer.nextLine();
+		this.breed = breed;
+	}
+
 	public String getGender() {
-		String gender = JOptionPane.showInputDialog("What is the gender of your pet?");
 		return gender;
 	}
-	
-	
+
+	public void setGender(String gender) {
+		System.out.println("What is the gender of your pet?");
+		gender = answer.nextLine();
+		this.gender = gender;
+	}
+
 	public String getSymptoms() {
-		String symptoms = JOptionPane.showInputDialog("What are your pet's symptoms today?");
 		return symptoms;
 	}
 
-	// public void setSymptoms(String symptoms) {
-	// this.symptoms = symptoms;
-	// }
+	public void setSymptoms(String symptoms) {
+		System.out.println("What are the symptoms of your pet?");
+		symptoms = answer.nextLine();
+		this.symptoms = symptoms;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		System.out.println("How old is your pet?");
+		age = answer.nextLine();
+		this.age = age;
+	}
+
 }
